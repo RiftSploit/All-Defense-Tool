@@ -29,7 +29,10 @@
 
 ## 📚 目录
 
-
+* [AI安全攻防项目](#ai安全攻防项目)
+  * [AI 安全攻防相关框架](#ai-安全攻防相关框架)
+  * [AI 安全攻防相关Plugins/Skill/MCP](#ai-安全攻防相关pluginsskillmcp)
+  * [AI 应用安全](#ai-应用安全)
 * [🛠️ 半/全自动化利用工具](#半全自动化利用工具)
 * [🔍 信息收集工具](#信息收集工具)
   * [资产发现工具](#资产发现工具)
@@ -87,10 +90,44 @@
   * [溯源反制工具](#溯源反制工具)
 * [📚 其他安全资料整理](#其他安全资料整理)
   * [JAVA安全研究](#java安全研究)
-  * [AI安全](#ai安全)
   * [安全面试](#安全面试)
   * [实战红蓝资料集锦](#实战红蓝资料集锦)
   * [云安全资料](#云安全资料)
+
+
+# AI安全攻防项目
+
+## AI 安全攻防相关框架
+
+| 项目简介                                                     | 项目地址                              | 最近更新   |
+| ------------------------------------------------------------ | ------------------------------------- | ---------- |
+| Strix 是自主运行的 AI 代理，它们的行为就像真正的黑客一样——动态运行您的代码，发现漏洞，并通过实际的概念验证进行验证。 | https://github.com/usestrix/strix     | 2026-03-10 |
+| Shannon 是一款用于 Web 应用和 API 的完全自主 AI 渗透测试工具。 | https://github.com/KeygraphHQ/shannon | 2025-04-07 |
+
+## AI 安全攻防相关Plugins/Skill/MCP
+
+实际上不太建议高级模型装载一些所谓的渗透测试、代码审计skill（比如里面都是xx漏洞skill），基本上都是给AI降智，限制了发挥，属于大专生/本科生教博士生做事。AI见过的漏洞类型你或许都没见过。skill重点是思维。
+
+| 项目简介                                                     | 项目地址                                                     | 最近更新   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
+| 基于 Claude Code 的免杀技术研究与 Shellcode Loader 生成框架。 | https://github.com/JDArmy/Evasion-SubAgents                  | 2026-03-18 |
+| 可以反编译Android APK/XAPK/JAR/AAR文件，并**提取**应用程序使用的**HTTP API——**改装端点、OkHttp调用、硬编码URL、身份验证模式 | https://github.com/SimoneAvogadro/android-reverse-engineering-skill | 2026-03-10 |
+| **WooYun Legacy** 是一个 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 插件，基于 WooYun（2010-2016）收录的 22,132 个业务逻辑漏洞案例，为 Claude 的安全测试输出注入**真实公司案例引用**、**量化统计数据**和**数据驱动的测试优先级排序**。 | https://github.com/tanweai/wooyun-legacy                     | 2026-03-08 |
+| 结合chrome-devtools-mcp的能力并加上Skill的规范，实现JSRPC+Flask+autoDecoder方案的前端JS逆向自动化分析，提升JS逆向的效率 | https://github.com/Fausto-404/js-reverse-automation--skill   | 2026-02-10 |
+| MCP-SecurityTools 是一个专注于收录和更新网络安全领域 MCP 的开源项目，旨在汇总、整理和优化各类与 MCP 相关的安全工具、技术及实战经验。 | https://github.com/Ta0ing/MCP-SecurityTools                  | 2025-04-07 |
+
+
+
+## AI 应用安全
+
+| 项目简介                                                     | 项目地址                                           | 最近更新   |
+| ------------------------------------------------------------ | -------------------------------------------------- | ---------- |
+| 面向基于MCP的AI工具的综合安全检查清单。由SlowMist构建，以保障大语言模型插件生态系统的安全。 | https://github.com/slowmist/MCP-Security-Checklist | 2025-04-28 |
+| MCP-SecurityTools 是一个专注于收录和更新网络安全领域 MCP 的开源项目，旨在汇总、整理和优化各类与 MCP 相关的安全工具、技术及实战经验。 | https://github.com/Ta0ing/MCP-SecurityTools        | 2025-04-07 |
+| Ai迷思录（应用与安全指南）                                   | https://github.com/Acmesec/theAIMythbook           | 2025-03-24 |
+| Prompt越狱手册                                               | https://github.com/Acmesec/PromptJailbreakManual/  | 2024-12-17 |
+
+
 
 # 🛠️ 半/全自动化利用工具
 
@@ -116,9 +153,6 @@
 | 分布式资产信息收集和漏洞扫描平台 | https://github.com/1in9e/gosint | 2023-03-03 |
 | 从子域名、端口服务、漏洞、爬虫等一体化的资产管理系统 | https://github.com/CTF-MissFeng/bayonet | 2022-11-22 |
 | 一个高度可定制Web自动化扫描框架 | https://github.com/r3curs1v3-pr0xy/vajra | 2021-10-29 |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 # 🔍 信息收集工具
 
@@ -143,10 +177,6 @@
 | SRC子域名资产监控 | https://github.com/LangziFun/LangSrcCurise | 2021-01-14 |
 | 快速侦察与目标关联的互联网资产，构建基础资产信息库。 | https://github.com/TophantTechnology/ARL | - |
 | 集成GoogleHacking语法来进行信息收集 | https://github.com/TebbaaX/GRecon | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## 子域名收集工具
 
@@ -160,8 +190,7 @@
 | src子域名监控 | https://github.com/LangziFun/LangSrcCurise | 2021-01-14 |
 | Layer子域名挖掘机 | https://github.com/euphrat1ca/LayerDomainFinder | 2019-07-17 |
 | 在线子域名收集 | https://rapiddns.io/subdomain | - |
-|  |  | - |
-|  |  | - |
+
 
 ## 目录扫描工具
 
@@ -185,7 +214,6 @@
 | 使用GoLang开发的目录/子域扫描器 | https://github.com/ReddyyZ/urlbrute | 2020-12-05 |
 | 御剑目录扫描专业版 | https://github.com/foryujian/yjdirscan | 2020-10-25 |
 | 御剑后台扫描工具珍藏版 | https://www.fujieace.com/hacker/tools/yujian.html | - |
-|  |  | - |
 
 ## 指纹识别工具
 
@@ -218,7 +246,6 @@
 | 光速扫描 | http://pan.baidu.com/s/1pLjaQKF | - |
 | 在线端口扫描1 | http://coolaf.com/tool/port | - |
 | 在线端口扫描2 | http://tool.cc/port/ | - |
-|  |  | - |
 
 
 
@@ -233,7 +260,7 @@
 | 浏览器内存漫游解决方案 | https://github.com/JSREI/ast-hook-for-js-RE | 2024-05-07 |
 | 基于CDP实现的远程JS debug工具 | https://github.com/1oid/remotejs | 2023-09-06 |
 | 一款支持多种加密算法、或直接执行浏览器JS代码的BurpSuite插件。 | https://github.com/whwlsfb/BurpCrypto | 2023-08-04 |
-|  |  | - |
+| 快速调试前端 js 代码工具包 | https://github.com/cilame/v_jstools | 2026-04-14 |
 
 ## Burp插件
 
@@ -268,16 +295,13 @@
 | GadgetProbe Burp插件 用来爆破远程类查找Java反序列化 | https://github.com/BishopFox/GadgetProbe | 2021-03-04 |
 | 用于在所有请求中自动执行 SSRF 检测 | https://github.com/ethicalhackingplayground/ssrf-king | 2021-01-20 |
 | Tls指纹特征绕过插件\ | Bypass | burp-awesome-tls |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
+
 
 ## 浏览器插件
 
 | 项目简介 | 项目地址 | 最近更新 |
 | ------------------------------------------------------------ | ------------------------------------------------- | --- |
+| 反调试+路由守卫绕过+js逆向加解密快速定位 | https://github.com/0xsdeo/AntiDebug_Breaker | 2025-01-05 |
 | mitaka 用于 OSINT 搜索的Chrome和Firefox扩展 | https://github.com/ninoseki/mitaka | 2026-04-13 |
 | Hack-Tools  适用于红队的浏览器扩展插件 | https://github.com/LasCC/Hack-Tools | 2025-01-05 |
 | SwitchyOmega 浏览器的代理插件 | https://github.com/FelisCatus/SwitchyOmega | 2024-12-27 |
@@ -419,12 +443,6 @@
 |  |  | - |
 | jenkins-attack-framework 针对 Jenkins 的攻击框架 | https://github.com/Accenture | - |
 | Nacos漏洞综合利用GUI工具，集成了默认口令漏洞、SQL注入漏洞、身份认证绕过漏洞、反序列化漏洞的检测及其利用 | https://github.com/charonlight/NacosExploitGUI | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## 重点cms利用工具
 
@@ -445,13 +463,6 @@
 | 通达OA综合利用工具 | https://github.com/xinyu2428/TDOA_RCE | 2021-03-17 |
 | 蓝凌OA漏洞利用工具/前台无条件RCE/文件写入 | https://github.com/yuanhaiGreg/LandrayExploit | - |
 | 泛微OA漏洞综合利用脚本 | https://github.com/z1un/weaver_exp | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## 信息泄露利用工具
 
@@ -508,7 +519,6 @@
 | Boom 是一款基于无头浏览器的智能 Web 弱口令（后台密码）爆破工具 | https://github.com/Fly-Playgroud/Boom | 2024-05-07 |
 | 一款面向企业的渗透测试字典生成工具。 | https://github.com/ccc-f/Fdict | 2022-12-20 |
 | 超级弱口令检查工具是一款Windows平台的弱口令审计工具 | https://github.com/shack2/SNETCracker | 2020-07-29 |
-|  |  | - |
 
 ## 全网字典收集
 
@@ -596,17 +606,6 @@
 | 这是一个调用chatGPT进行代码审计的工具。 | https://github.com/Kento-Sec/chatGPT-CodeReview | 2023-06-01 |
 | 源代码静态分析工具，支持Java、PHP、C#、Python、Go等27种编程语言，而且能够集成在IDE、Jenkins、Git等服务。 | https://www.sonarqube.org | - |
 | 一种适用于 C++、C#、VB、PHP、Java、PL/SQL 和 COBOL 的自动化代码安全审查工具。 | https://sourceforge.net/projects/visualcodegrepp/ | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 
 
@@ -631,8 +630,6 @@
 | JavaWeb漏洞审计工具，构建方法调用链并模拟栈帧进行分析 | https://github.com/4ra1n/code-inspector | 2023-06-03 |
 | IDEA静态代码安全审计及漏洞一键修复插件 | https://github.com/momosecurity/momo-code-sec-inspector-java | 2022-03-10 |
 | 一个静态代码脆弱性检测系统，支持java源码的审计 | https://github.com/zsdlove/Hades | 2021-01-08 |
-|  |  | - |
-|  |  | - |
 
 ## 代码审计辅助工具-php
 
@@ -649,14 +646,6 @@
 | 项目简介 | 项目地址 | 最近更新 |
 | ------------------------------------------------------------ | --------------------------------------------- | --- |
 | NETReactorSlayer一款反混淆神器，适用于Eziriz .NET Reactor工具混淆后的代码，最新版本6.4 | https://github.com/SychicBoy/NETReactorSlayer | 2024-07-12 |
-|  |  | - |
-|  |  | - |
-
-
-
-
-
-
 
 ## 通用型WAF绕过
 
@@ -664,10 +653,6 @@
 | ------------------------------------------------------------ | ---------------------------------------- | --- |
 | 一个基于fuzz的waf绕过测试工具，当前支持命令执行、SQL注入绕过。 | https://github.com/leveryd/x-waf | 2025-01-26 |
 | 绕过瑞数waf的动态验证机制，实现请求包重放，可针对不同网站使用。 | https://github.com/R0A1NG/Botgate_bypass | - |
-
-
-
-
 
 
 
@@ -681,9 +666,6 @@
 | 高价值系统的后利用工具 | https://github.com/0linlin0/XPost | 2024-06-17 |
 | 在线 Windows 操作系统常见杀软进程/办公软件/shell终端等识别，输入 tasklist /SVC 将内容粘贴 | https://forum.ywhack.com/bountytips.php?process | - |
 | **杀软在线对比** | http://bypass.tidesec.com/bycms | - |
-|  |  | - |
-
-
 
 
 
@@ -699,13 +681,6 @@
 | 跨平台版中国菜刀 | https://github.com/Chora10/Cknife | 2023-11-29 |
 | “冰蝎”动态二进制加密网站管理客户端 | https://github.com/rebeyond/Behinder | 2023-08-24 |
 | 一句话WEB端管理工具 | https://github.com/boy-hack/WebshellManager | 2017-02-01 |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## c2管理工具
 
@@ -721,7 +696,6 @@
 | 一款可以在不出网的环境下进行反向代理及cs上线的工具 | https://github.com/Daybr4ak/C2ReverseProxy | 2023-04-26 |
 | cs4.4修改去特征狗狗版(美化ui,去除特征,自带bypass核晶截图等..) | https://github.com/TryGOTry/DogCs4.4/tree/dogcs_v2.1 | 2023-01-17 |
 | 跨平台重构了Cobaltstrike Beacon，目前实现的功能具备免杀性，可过Defender、360核晶、卡巴斯基（除内存操作外，如注入原生cs的dll）、火绒 | https://github.com/H4de5-7/geacon_pro | - |
-|  |  | - |
 
 
 
@@ -749,7 +723,6 @@
 | 红队小工具 ，利用DCERPC协议获取Windows机器主机信息和多网卡信息 | https://github.com/Y0-kan/HostInfoScan | 2023-04-25 |
 | 一款快速探测内网主机信息工具（深信服深蓝实验室天威战队强力驱动） | https://github.com/shmilylty/SharpHostInfo | 2022-12-15 |
 | ATAttack是一款后渗透半自动化侦察工具，它从进攻性和防御性安全角度执行许多面向安全性的主机调查“安全检查”。 | https://github.com/c1y2m3/ATAttack | 2022-12-08 |
-|  |  | - |
 
 
 
@@ -763,15 +736,6 @@
 | 强大的敏感信息搜索工具 | https://github.com/Naturehi666/searchall | 2024-11-23 |
 | Pillager是一个适用于后渗透期间的信息收集工具，可以收集目标机器上敏感信息，方便下一步渗透工作的进行。 | https://github.com/qwqdanchun/Pillager | 2024-09-07 |
 | 通用的数据库连接配置信息提取工具 | https://github.com/corener/JavaPassDump | 2022-01-07 |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 
 
@@ -788,10 +752,6 @@
 | 一款CS后渗透模块插件，让大家使用一款插件就够了 | https://github.com/d3ckx1/OLa | 2022-08-15 |
 | 绕过虚拟机登录验证屏幕的工具 | https://github.com/hzphreak/VMInjector | 2012-11-14 |
 | 常见横向移动与域控权限维持方法 | https://xz.aliyun.com/t/9382 | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## 域渗透工具
 
@@ -800,8 +760,6 @@
 | 一个强大的内网域渗透分析工具，构建于 Linkurious 之上 | https://github.com/BloodHoundAD/BloodHound | 2026-03-02 |
 | 域内自动化信息搜集利用工具 | https://github.com/wjlab/Darksteel | 2023-10-24 |
 | 检测域环境内，域机器的本地管理组成员是否存在弱口令和通用口令，对域用户的权限分配以及域内委派查询 | https://github.com/0x727/ShuiYing_0x727 | 2021-08-10 |
-|  |  | - |
-|  |  | - |
 
 
 
@@ -824,8 +782,6 @@
 | FakeLogonScreen 是一个伪造 Windows 登录屏幕以获取用户密码的实用程序。输入的密码将根据 Active Directory 或本地计算机进行验证，以确保其正确，然后显示到控制台或保存到磁盘。 | https://github.com/bitsadmin/fakelogonscreen | 2020-02-03 |
 | 解密浏览器数据（密码\ | 历史记录\ | 书签 \ | 信用卡 \ | 下载记录）的导出工具，支持全平台主流浏览器。 | https://github.com/moonD4rk/HackBrowserData/ | HackBrowserData |
 | 微信客户端取证，可获取用户个人信息(昵称/账号/手机/邮箱/数据库密钥(用来解密聊天记录))；支持获取多用户信息 | https://github.com/AdminTest0/SharpWxDump | - |
-|  |  | - |
-|  |  | - |
 
 ## 隧道代理工具
 
@@ -850,7 +806,6 @@
 | 一个简单的 reverse ICMP shell | https://github.com/inquisb/icmpsh | 2018-04-06 |
 | 全平台代理工具，支持多种socks协议 | https://www.proxifier.com/ | - |
 | 内网渗透代理、端口转发工具 | http://rootkiter.com/Termite/ | - |
-|  |  | - |
 
 ## 优秀免杀项目
 
@@ -876,7 +831,6 @@
 | ridhijack是一款通过C/C++实现的RID劫持、影子账户、账户克隆工具。 | https://github.com/yanghaoi/ridhijack | 2021-12-22 |
 | 进行克隆用户、添加用户等账户防护安全检测的轻巧工具 | https://github.com/0x727/CloneX_0x727 | 2021-09-03 |
 | 创建隐藏计划任务，权限维持，Bypass AV | https://github.com/0x727/SchTask_0x727 | 2021-09-01 |
-|  |  | - |
 
 # 🏗️ 基础设施搭建
 
@@ -889,7 +843,6 @@
 | 适合每个人的动态基础设施框架，轻松分配许多不同扫描工具的工作量，包括nmap、ffuf、masscan、核、meg等！ | https://github.com/pry0cc/axiom | 2024-09-30 |
 | 反连助手：发现可以映射本地端口的互联网IP，本工具可从hunter、quake、fofa等网络空间测绘平台，收集、探测互联网IP，并通过配置文件中的端口映射关系，把本地端口映射到互联网IP指定的端口，以便反弹shell等场景下使用。 | https://github.com/thinkoaa/Dlam | 2024-09-26 |
 | DNSLOG平台 golang 一键启动版 | https://github.com/yumusb/DNSLog-Platform-Golang | 2021-12-30 |
-|  |  | - |
 
 ## 代理池
 
@@ -901,12 +854,7 @@
 | 一款功能强大的代理检查和IP地址轮转工具 | https://github.com/kitabisa/mubeng | 2025-10-08 |
 | 利用fofa搜索socks5开放代理进行代理池轮切的工具 | https://github.com/akkuman/rotateproxy | 2025-05-20 |
 | 利用IP地址池进行自动切换Http代理，防止IP封禁。 | https://github.com/Mustard404/Auto_proxy | 2022-11-15 |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
+
 
 ## 靶场清单
 
@@ -971,7 +919,6 @@
 | Linux/Windows/应急响应个人笔记 | https://github.com/wpsec/Emergency-response-notes | 2023-10-12 |
 | 应急响应实战笔记，一个安全工程师的自我修养 | https://github.com/Bypass007/Emergency-Response-Notes | 2023-06-26 |
 | 应急响应指南 / emergency response checklist | https://github.com/theLSA/emergency-response-checklist | 2020-03-13 |
-|  |  | - |
 
 ## Linux应急响应工具
 
@@ -1016,7 +963,6 @@
 | 通过jsp脚本扫描java web Filter/Servlet型内存马 | https://github.com/c0ny1/java-memshell-scanner | 2023-03-09 |
 | 检测绝大部分所谓的内存免杀马 | https://github.com/huoji120/DuckMemoryScan | 2022-09-15 |
 | A java memory web shell extracting tool | https://github.com/LandGrey/copagent | 2021-05-17 |
-|  |  | - |
 
 ## 防守辅助分析工具
 
@@ -1035,8 +981,6 @@
 | 安全、快捷、高交互、企业级的蜜罐管理系统，护网；支持多种协议蜜罐、蜜签、诱饵等功能。 | https://github.com/seccome/Ehoney | 2023-10-17 |
 | 伪造Myslq服务端,并利用Mysql逻辑漏洞来获取客户端的任意文件反击攻击者 | https://github.com/BeichenDream/MysqlT | 2022-04-24 |
 | 检测目标Mysql数据库是不是蜜罐 | https://github.com/BeichenDream/WhetherMysqlSham | 2021-02-23 |
-|  |  | - |
-|  |  | - |
 
 
 
@@ -1056,19 +1000,6 @@
 | 抽离出 utf-8-overlong-encoding 的序列化逻辑，实现 2 3 字节加密序列化数组 | https://github.com/Whoopsunix/utf-8-overlong-encoding | 2024-03-11 |
 | Web-Security-Learning | https://github.com/CHYbeta/Web-Security-Learning | 2021-10-02 |
 
-## AI-LLM相关资料
-
-| 项目简介 | 项目地址 | 最近更新 |
-| ------------------------------------------------------------ | ----------------------------------------------------------- | --- |
-| 面向基于MCP的AI工具的综合安全检查清单。由SlowMist构建，以保障大语言模型插件生态系统的安全。 | https://github.com/slowmist/MCP-Security-Checklist | 2025-04-28 |
-| MCP-SecurityTools 是一个专注于收录和更新网络安全领域 MCP 的开源项目，旨在汇总、整理和优化各类与 MCP 相关的安全工具、技术及实战经验。 | https://github.com/Ta0ing/MCP-SecurityTools | 2025-04-07 |
-| Ai迷思录（应用与安全指南） | https://github.com/Acmesec/theAIMythbook | 2025-03-24 |
-| Prompt越狱手册 | https://github.com/Acmesec/PromptJailbreakManual/ | 2024-12-17 |
-| 《AI 研发提效：构建 AI 辅助编码助手》 | https://github.com/unit-mesh/build-your-ai-coding-assistant | 2024-07-05 |
-| AIGC 求职面经、必备基础知识、提示词工程、ChatGPT、Stable Diffusion、Prompt、Embedding、Fintune 等 AIGC 求职你所需要知道的一切~ | https://github.com/EmbraceAGI/AIGC_Interview | 2024-06-26 |
-| 大模型学习导航 | https://github.com/Y4tacker/LLM-Navigation | - |
-| 通过各厂商大模型应用中已公开的信息挖掘潜在的安全问题并公开一些技术细节 | https://github.com/LLM-Red-Team | - |
-
 
 
 ## 安全面试
@@ -1077,11 +1008,6 @@
 | ------------------------------------------------------------ | ------------------------------------------------ | --- |
 | 一个2023届毕业生在毕业前持续更新、收集的安全岗面试题及面试经验分享~ | https://github.com/vvmdx/Sec-Interview-4-2023 | 2024-06-27 |
 | 网络信息安全从业者面试指南 | https://github.com/FeeiCN/SecurityInterviewGuide | 2023-11-01 |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
-|  |  | - |
 
 ## 实战红蓝资料集锦
 
