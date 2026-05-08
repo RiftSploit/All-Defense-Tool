@@ -353,6 +353,7 @@
 
 | 项目简介 | 项目地址 | 最近更新 |
 | ------------------------------------------------------------ | ------------------------------------------------------- | --- |
+| WMPFDebugger 二开，微信小程序安全调试工具 | https://github.com/Spade-sec/First.git | 2026-05-05 |
 | 全自动化，微信小程序 wxapkg 包 源代码还原工具, 线上代码安全审计 | https://github.com/biggerstar/wedecode | 2026-05-01 |
 | （推荐）微信小程序反编译工具，.wxapkg 文件扫描 + 解密 + 解包工具 | https://github.com/wux1an/wxapkg | 2026-04-28 |
 | 一款适用于以APP病毒分析、APP漏洞挖掘、APP开发、HW行动/红队/渗透测试团队为场景的移动端(Android、iOS)辅助分析工具 | https://github.com/sulab999/AppMessenger | 2026-03-23 |
